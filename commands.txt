@@ -1,0 +1,7 @@
+docs/docker/
+docker build -t psql1 .
+docker images
+docker run -it --name postgress_containter -p 5432:5432 psql1
+docker ps
+docker exec -it container_id sh
+psql -U docker -d student -p 5432
